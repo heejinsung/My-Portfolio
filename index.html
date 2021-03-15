@@ -6,24 +6,29 @@
    <title>성희진 포트폴리오</title>
 
    <!-- fontawesome -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">   
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">  
+   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 
    <!-- css link -->
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="css/media.css">
+   <link rel="stylesheet" href="plugin/lightslider.css">
+
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
    <script src="js/main.js" defer></script>
+   <script src="plugin/lightslider.js" defer></script>
 </head>
 <body>
    <div id="Header">
-      <header>
-         <h1><a href="#">HEEJIN</a></h1>
+      <header class="scrolltop">
+         <h1><a href="./index.html">HEEJIN</a></h1>
          <nav>
             <ul>
-               <li><a href="#">About</a></li>
-               <li><a href="#">skills</a></li>
-               <li><a href="#">Works</a></li>
+               <li><a href="#about">About</a></li>
+               <li><a href="#skills">skills</a></li>
+               <li><a href="#works">Works</a></li>
                <li><a href="#">Contact</a></li>
             </ul>
          </nav>
@@ -34,12 +39,14 @@
             <div class="menu_overlay">
                <div class="nav_menu">
                   <ul>
-                     <li><a href="#">About me</a></li>
+                     <li><a href="#about">About me</a></li>
                      <li><a href="#">What I do?</a></li>
                      <li><a href="#">My Works</a></li>
                      <li><a href="#">Contact</a></li>
                   </ul>
-                 
+                  <!-- <p>#Web Publisher</p>
+                  <p>#성희진</p>
+                  <p><a href="mailto:heejins0620@gmail.com">send e-mail</a></p> -->
                </div>
             </div>
          </div>
@@ -64,6 +71,168 @@
             </ul>
          </div> -->
       </div>
+      <div class="scroll">
+         <a href="#about">
+            <img src="./img/scroll-down.gif" alt="">
+         </a>
+      </div>
    </section>
+   <!-- end of main content -->
+   <section id="contents">
+      <div id="about">
+         <div class="about ConTitle">
+            <h2>
+               PROFILE
+               <span class="subtit">ABOUT ME</span>
+            </h2>
+         </div>
+      </div>
+      <!-- end of about content -->
+      <div id="skills">
+         <div class="skills ConTitle">
+            <h2>
+               WHAT I DO?
+               <span class="subtit">SKILLS</span>
+            </h2>
+         </div>
+         <div class="conBox">
+            <div class="html">
+               <div class="skillImg">
+                  <i class="fab fa-html5"></i>
+               </div>
+               <div class="skillBox">
+                  <h3>HTML</h3>
+                  <p>문서를 구조화하여 웹 표준에 맞게 작업합니다.</p>
+                  <div class="ProgressBox">
+                     <span class="ProgressBar" style="width: 80%;" data-progress="80"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="css">
+               <div class="skillImg">
+                  <i class="fab fa-css3-alt"></i>
+               </div>
+               <div class="skillBox">
+                  <h3>CSS</h3>
+                  <p>CSS를 이용하여 다양한 스타일, 애니메이션 및 반응형 모바일 웹페이지를 구현합니다.</p>
+                  <div class="ProgressBox">
+                     <span class="ProgressBar" style="width: 80%;" data-progress="80"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="js">
+               <div class="skillImg">
+                  <i class="fab fa-js"></i>
+               </div>
+               <div class="skillBox">
+                  <h3>JAVASCRIPT</h3>
+                  <p>기본문법 구조를 이해하고 활용할 수 있습니다.</p>
+                  <div class="ProgressBox">
+                     <span class="ProgressBar" style="width: 45%;" data-progress="45"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="php">
+               <div class="skillImg">
+                  <i class="fab fa-php"></i>
+               </div>
+               <div class="skillBox">
+                  <h3>PHP</h3>
+                  <p>문서를 구조화하여 웹 표준에 맞게 작업합니다.</p>
+                  <div class="ProgressBox">
+                     <span class="ProgressBar" style="width: 50%;" data-progress="50"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="ps">
+               <div class="skillImg">
+                  <i class="xi-photoshop"></i>
+               </div>
+               <div class="skillBox">
+                  <h3>PHOTOSHOP</h3>
+                  <p>문서를 구조화하여 웹 표준에 맞게 작업합니다.</p>
+                  <div class="ProgressBox">
+                     <span class="ProgressBar" style="width: 70%;"></span>
+                  </div>
+               </div>
+            </div>
+            <div class="css">
+               <div class="skillImg">
+                  <i class="fab fa-html5"></i>
+               </div>
+               <div class="skillBox">
+                  <h3>CSS</h3>
+                  <p>문서를 구조화하여 웹 표준에 맞게 작업합니다.</p>
+                  <div class="ProgressBox">
+                     <span class="ProgressBar" style="width: 80%;"></span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- end of skills content -->
+      <div id="works">
+         <div class="works ConTitle">
+            <h2>
+               PORTFOLIO
+               <span class="subtit">WORKS</span>
+            </h2>
+         </div>
+         <div class="slide_container">
+            <div class="slider">
+               <div class="slideBox">
+                  <div class="slideImg">
+                     <img src="./img/renewalpj_mockup.jpg" alt="nonfiction_mockup">
+                  </div>
+                  <div class="slideTxt">
+                     <h3>NONFICTION<br>
+                        Renewal Project
+                     </h3> 
+                     <p>논픽션 리디자인,반응형 프로젝트</p>
+                     <div class="Txtlink">
+                        <a href="#">View Detail</a>
+                        <a href="#">Go To Site</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end of slider -->
+            <div class="slider">
+               <div class="slideBox">
+                  <div class="slideImg">
+                     <img src="./img/renewal_mockup.jpg" alt="nonfiction_mockup">
+                  </div>
+                  <div class="slideTxt">
+                     <h3>MOIVES<br>
+                        API Project
+                     </h3> 
+                     <p>논픽션 리디자인,반응형 프로젝트</p>
+                     <div class="Txtlink">
+                        <a href="#">View Detail</a>
+                        <a href="#">Go To Site</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end of slider -->
+         </div>
+      </div>
+   </section>
+   <script>
+      $(document).ready(function() {
+         $(".slide_container").lightSlider({
+            item:1,
+            mode:'slide',    // 이미지가 표시되는 형식 (fade / slide)
+            loop:true,       // 무한반복 할 것인지
+            auto:true,       // 자동 슬라이드
+            pager:true,
+            speed:2000,      // 슬라이드 되는 속도
+            pause:3000,       // 이미지가 머무는 시간
+            controls:true
+         });
+      });
+
+   </script>
+ 
 </body>
 </html>
