@@ -1,16 +1,15 @@
 $(function(){
 
-   // 네비게이션 스크롤   
-   $(window).scroll(function(){
-
-      let scrollTop=$(this).scrollTop();
-
-      if(scrollTop>700){
-            $('header').addClass('on');
+   	//--------헤더 픽스--------
+	$(window).scroll(function(){
+      let scrollTop = $(this).scrollTop();
+      if( scrollTop > 700 ){
+         $('header').addClass("isFixed")
       }else{
-            $('header').removeClass('on');
-      };
+          $('header').removeClass("isFixed")
+      }
    });
+
 
    //--------스크롤 버튼 클릭 시 해당영역으로 이동--------
 	$('#main_content .scroll').click(function(){

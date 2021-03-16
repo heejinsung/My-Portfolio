@@ -7,35 +7,35 @@
 /*Reset css*/
 *{margin:0; padding:0; box-sizing:border-box;}
 ul, li{list-style:none;}
-a{text-decoration:none; color:#000;}
+a{text-decoration:none; color: inherit;}
 img{display:block;}
 button, input, textarea{outline:0; font-family:'Noto Sans KR';-webkit-appearance: none;}
 .clear:after{content:""; display:block; clear:both;}
 .ConTitle{padding-bottom: 30px}
 .ConTitle h2{padding: 20px 0; font-size: 3.8rem;line-height: 0.8; color: rgba(0,0,0,0.6);}
-.subtit{font-family: 'Architects Daughter', cursive; color: #bdc9a6; font-size: 3.3rem; display: block; line-height: 0.2;}
+/* .subtit{font-family: 'Architects Daughter', cursive; color: #bdc9a6; font-size: 3.3rem; display: block; line-height: 0.2;} */
 
 /*폰트*/
 body{font-family: 'Noto Sans KR', sans-serif; color:#4a473c;} 
-header, h1, h2{font-family: 'Lexend Peta', sans-serif; color:#4a473c;}
+header, h1, h2{font-family: 'Lexend Peta', sans-serif;}
 
-/* .green{font-family: 'Rock Salt', cursive; color:#37a576;} */
 
 /* -------------------Header영역----------------------- */
-#Header{width: 100%; height: 90px; margin: 0 auto; position: fixed; top: 0; z-index: 999;}
-#Header header{position: relative; width: 100%; height: 100%; padding: 0 5%; display: flex; align-items: center; justify-content: space-between; background-color: #fff; transition: all 0.4s;}
+#Header{width: 100%; height: 90px; margin: 0 auto; position: fixed; top: 0; z-index: 999; }
+#Header header{position: relative; width: 100%; height: 100%; padding: 0 5%; display: flex; align-items: center; justify-content: space-between;  transition: all 0.4s; color: #000;}
+#Header header.isFixed{background: #111; color: #fff; height: 70px; }
 
-#Header .scrolltop.on{background-color: #bdc9a6; height: 70px;}
+#Header header h1{position: relative; font-size: 1.6rem; width: 10%; z-index: 20; }
+#Header header.isFixed header h1{color: #fff;}
 
-#Header header h1{position: relative; font-size: 1.6rem; width: 10%; z-index: 20;}
 /* #Header header h1:hover a{color: #fff;} */
 
 #Header header>nav{position: relative;  height: 100%; _margin: 0 auto; display: flex; z-index: 20;}
 #Header header>nav>ul{position:relative; display: flex; align-items: center; _justify-content: space-between;}
 #Header header>nav>ul>li{margin: 30px; font-size: 1.0rem;}
-#Header header>nav>ul>li:hover a{color: #bdc9a6;}
+#Header header>nav>ul>li:hover a{color: #444;}
 
-#Header header .menu{width: 10%; height: auto; }
+#Header header .menu{width: 10%; height: auto; display:none;}
 #Header header .menu .menu_icon{text-align: center; font-size: 1.5rem;position: relative; z-index: 30;}
 #Header header .menu .menu_overlay{position: fixed; width: 100vw; height: 100vh; background: rgba(0,0,0,0.5); right: 0; display: none; opacity: 0; z-index: 10; top: 0;}
 .menu_overlay .nav_menu{right: 0; position: absolute; width: 40%; height: 100vh; background-color: #fff;}
@@ -49,8 +49,8 @@ header, h1, h2{font-family: 'Lexend Peta', sans-serif; color:#4a473c;}
 
 
 /* ------------Main Content-------------- */
-#main_content{position: relative; width: 100%; height: 100vh; _background-color: #bdc9a6;}
-#main_content .mainTxt{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); font-size: 3.5rem; font-family: 'Lexend Peta', sans-serif;;}
+#main_content{position: relative; width: 100%; height: 100vh; background-color: #eee;}
+#main_content .mainTxt{position: absolute; top: 35%; left: 50%; transform: translate(-50%); font-size: 3.5rem; font-family: 'Lexend Peta', sans-serif;;}
 
 .typing-txt{display: none;}
 ul{list-style:none;}
@@ -70,14 +70,35 @@ ul{list-style:none;}
 #main_content .scroll{position: absolute; display: block; width: 70px; height: 60px; top: 80%; left: 50%; transform: translateX(-50%);z-index: 999;}
 #main_content .scroll img{width: 100%; height: 100%;}
 
-#contents{width: 100%; height: 700px; _position: relative;}
+#contents{width: 100%; height: auto; _position: relative;}
 /* ------------about Content-------------- */
-#about{width: 100%; height: 100vh; padding: 100px 5%;}
+#about{width: 100%; _height: 100vh; padding: 50px 0; _background-color: #ddd;}
 #about .ConTitle h2{text-align: left;}
 #about .ConTitle .subtit{display: block; line-height: 0.2; padding-left: 40px;}
 
+.aboutBox{width: 100%; height: 400px; display: flex; max-width: 1200px; margin: 0 auto;}
+.aboutBox .aboutImg{width: 50%; height: 100%;}
+.aboutBox .aboutTxt{width: 50%; height: 100%; _background-color: #ddd;}
+.aboutBox .aboutTxt .about_info{display: flex;}
+.aboutBox .about_info .infoTit{width: 30%;}
 
-/* ------------skills Content-------------- */
+.profile{width: 100%; height: 60vh; background-color: #fff;}
+
+.skills{width:100%;height: 400px; position: relative; background-image: url(../img/bg3.jpeg); background-size: cover; overflow: hidden; background-attachment: fixed; padding: 100px 0;}
+.skills .bg_overlay{position: absolute; height: 100%; width: 100%; opacity: 0.75; top: 0; left: 0; background-color: #1c1c1c;}
+
+.skillBox{position: relative; max-width:980px; width:100%; height: 200px; margin: 0 auto; }
+.skillBox .row{display: flex; flex-wrap: wrap; justify-content: space-evenly; align-items: center; text-align: center; height: 100%;}
+.skillBox .itembox{width: 15%; display: flex; align-items: center; box-sizing: border-box;} 
+.skillBox .itembox .item{width: 100%; height: 100%; padding: 20px;}
+.skillBox .item i.fab{width: 100%; font-size: 3.9rem; color: #939393;}
+.skillBox .item p{color: #b7b7b7; font-size: 16px; line-height: 35px; }
+
+.skillBox .itembox .item:hover{_border: 1px solid #fff; background-color: #bdc9a6;}
+.skillBox .itembox .item:hover p,
+.skillBox .itembox .item:hover i.fab{color: #fff;}
+
+/* ------------skills Content--------------
 #skills{width: 100%; height: 100vh; padding: 100px 5%; margin: 0 auto;}
 #skills .ConTitle{position: relative; _padding: 30px;}
 #skills .ConTitle h2{position: relative; text-align: center;}
@@ -100,7 +121,7 @@ ul{list-style:none;}
       width: 0;
    }
 
-}
+} */
 
 /* ------------works Content-------------- */
 #works{width: 100%; height: 100vh; padding: 100px 5%;}
@@ -110,8 +131,8 @@ ul{list-style:none;}
 .slider{height: 100%; width: 100%; position: relative;}
 .slideBox{width: 100%; height: 100%; position: absolute; } 
 .slideBox .slideImg{width: 100%; height: 100%; position: absolute; _top: 5%; padding: 0 8%;}
-.slideBox .slideImg img{width: 80%; height: 90%; }
-.slideBox .slideTxt{width: 100%; height: 100%; position: absolute; top: 27%; left: 69%;}
+.slideBox .slideImg img{width: 80%; _height: 80%; }
+.slideBox .slideTxt{width: 100%; height: auto; position: absolute; top: 20%; left: 72%;}
 .slideBox .slideTxt h3{padding-bottom: 10px; font-family: 'Acme', sans-serif; letter-spacing: 2px; font-size: 2.3rem;}
 .slideBox .slideTxt p{font-size: 0.9rem;}
 .slideBox .slideTxt .Txtlink{position: absolute; width: 13%; }
