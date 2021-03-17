@@ -26,10 +26,10 @@
          <h1><a href="./index.html">HEEJIN</a></h1>
          <nav>
             <ul>
-               <li><a href="#">Home</a></li>
-               <li><a href="#">Profile</a></li>
-               <li><a href="#">Portfolio</a></li>
-               <li><a href="#">Contact</a></li>
+               <li class="on"><a href="./index.html">Home</a></li>
+               <li><a href="#about">Profile</a></li>
+               <li><a href="#works">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
             </ul>
          </nav>
          <div class="menu">
@@ -44,42 +44,40 @@
                      <li><a href="#">Portfolio</a></li>
                      <li><a href="#">Contact</a></li>
                   </ul>
-                  <!-- <p>#Web Publisher</p>
-                  <p>#성희진</p>
-                  <p><a href="mailto:heejins0620@gmail.com">send e-mail</a></p> -->
                </div>
             </div>
          </div>
       </header>
    </div>
    <!-- end of Header -->
-   <section id="main_content">
-      <div class="mainTxt">
-         <div class="typing-txt">
-            <ul>
-               <li>Hello World!</li>
-               <li>Welcome to</li>
-               <li>Heejin's Portfolio</li>
-            </ul>
+   <div id="contents">
+      <section id="main_content">
+         <div class="mainTxt">
+            <div class="typing-txt">
+               <ul>
+                  <li>Hello World!</li>
+                  <li>Welcome to</li>
+                  <li>Heejin's Portfolio</li>
+               </ul>
+            </div>
+            <p class="typing"></p>
+            <!-- <div class="typing">
+      <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      </ul>
+      </div> -->
          </div>
-         <p class="typing"></p>
-         <!-- <div class="typing">
-            <ul>
-               <li></li>
-               <li></li>
-               <li></li>
-            </ul>
-         </div> -->
-      </div>
-      <div class="scroll">
-         <a href="#about">
-            <img src="./img/scroll-down.gif" alt="">
-         </a>
-      </div>
-   </section>
-   <!-- end of main content -->
-   <section id="contents">
-      <div id="about">
+         <div class="scroll">
+            <a href="#about">
+               <img src="./img/scroll-down.gif" alt="">
+            </a>
+         </div>
+      </section>
+      <!-- end of main content -->
+      
+      <section id="about">
          <div class="about ConTitle">
             <h2>
                PROFILE
@@ -88,7 +86,12 @@
          </div>
          <div class="profile">
             <div class="aboutBox">
-               <div class="aboutImg"></div>
+               <div class="aboutImg">
+                  <div class="subImg"></div>
+                  <div class="mainImg">
+                     <img src="./img/IMG_0944.JPG" alt="">
+                  </div>
+               </div>
                <div class="aboutTxt">
                   <i class="fas fa-quote-left"></i>
                   <h3>Hello, I'm a Web Publisher</h3>
@@ -98,7 +101,23 @@
                         <ul>
                            <li>성희진 | Sung Hee Jin</li>
                            <li>1995.06.20</li>
-                           <li>heejins0620@gmail.com</li>
+                           <li class="send"><a href="mailto:heejins0620@gmail.com">heejins0620@gmail.com</a></li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="about_info">
+                     <div class="infoTit">Education</div>
+                     <div class="infoCon">
+                        <ul>
+                           <li>
+                              <span class="date">2020.11~2021.04</span>
+                              더조은컴퓨터아카데미 스마트웹디자인(UI/UX)<br>
+                              콘텐츠개발(웹퍼블리셔) 과정 수료
+                           </li>
+                           <li>
+                              <span class="date">2014.03~2016.02</span>
+                              경복대학교 복지행정과 졸업
+                           </li>
                         </ul>
                      </div>
                   </div>
@@ -108,6 +127,9 @@
          <div class="skills">
             <div class="bg_overlay"></div>
             <div class="skillBox">
+               <div class="skillTit">
+                  Skills
+               </div>
                <div class="row">
                   <div class="html itembox">
                      <div class="html item">
@@ -127,6 +149,12 @@
                         <p>JavaScript</p>
                      </div>
                   </div>
+                  <div class="react itembox">
+                     <div class="react item">
+                        <i class="fab fa-react"></i>
+                        <p>React</p>
+                     </div>
+                  </div>
                   <div class="php itembox">
                      <div class="php item">
                         <i class="fab xi-php"></i>
@@ -142,10 +170,10 @@
                </div>
             </div>
          </div>
-      </div>
-      <!-- end of about content -->
-   
-      <div id="works">
+      </section>
+      <!-- end of profile/about section -->
+
+      <section id="works">
          <div class="works ConTitle">
             <h2>
                PORTFOLIO
@@ -161,11 +189,10 @@
                   <div class="slideTxt">
                      <h3>NONFICTION<br>
                         Renewal Project
-                     </h3> 
+                     </h3>
                      <p>논픽션 리디자인,반응형 프로젝트</p>
                      <div class="Txtlink">
-                        <a href="#">View Detail</a>
-                        <a href="http://shj6837.dothome.co.kr/renewalpj/">Go To Site</a>
+                        <a href="http://shj6837.dothome.co.kr/renewalpj/" data-link="renewal">View Site</a>
                      </div>
                   </div>
                </div>
@@ -179,19 +206,51 @@
                   <div class="slideTxt">
                      <h3>MOIVES<br>
                         API Project
-                     </h3> 
+                     </h3>
                      <p>영화 검색 API</p>
                      <div class="Txtlink">
-                        <a href="#">View Detail</a>
-                        <a href="#">Go To Site</a>
+                        <a href="http://shj6837.dothome.co.kr/movie_api/" data-link="api">View Site</a>
                      </div>
                   </div>
                </div>
             </div>
             <!-- end of slider -->
          </div>
-      </div>
-   </section>
+      </section>
+      <!-- end of portfolio/works section -->
+      <section id="contact">
+         <!-- <div class="contact ConTitle">
+            <h2>
+               CONTACT
+            </h2>
+         </div> -->
+         <div class="contactBox">
+            <h2 class="on">
+               <span>Thank You!</span>
+               <p>끝까지 봐주셔서 감사합니다!</p>
+               <!-- <p>저에 대해 궁금하시다면 메일보내주세요!</p> -->
+            </h2>
+            <div class="contact_link">
+               <ul>
+                  <li>
+                     <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=heejins0620@gmail.com" target="_blank"><i class="xi-gmail"></i></a>
+                  </li>
+                  <li>
+                     <a href="https://github.com/heejinsung" target="_blank"><i class="xi-github"></i></a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+
+      </section>
+      <footer>
+         <div class="copyright">
+            <p> &copy; 2021. Sungheejin all rights reserved. </p>
+            <p>본 사이트는 상업적 목적이 아닌 개인 포트폴리오 사이트로 제작되었습니다.</p>
+         </div>
+      </footer>
+      
+   </div>
    <script>
       $(document).ready(function() {
          $(".slide_container").lightSlider({

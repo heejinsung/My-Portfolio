@@ -1,6 +1,6 @@
 $(function(){
 
-   	//--------헤더 픽스--------
+   //--------header fix--------
 	$(window).scroll(function(){
       let scrollTop = $(this).scrollTop();
       if( scrollTop > 700 ){
@@ -8,10 +8,11 @@ $(function(){
       }else{
           $('header').removeClass("isFixed")
       }
+      return false;
    });
 
 
-   //--------스크롤 버튼 클릭 시 해당영역으로 이동--------
+   //--------스크롤이미지 버튼 클릭 시 해당영역으로 이동--------
 	$('#main_content .scroll').click(function(){
       let offset = $('#about').offset(); 
       $('html').animate({scrollTop : offset.top}, 700);
@@ -23,7 +24,31 @@ $(function(){
    //    $('html').animate({scrollTop : 0}, 800);
    // });
 
+   //-------메뉴클릭시 스크롤 이동
+   let menu = $("#Header nav li");
+   let contents =  $("#contents > section");
 
+   menu.click(function(e){
+      e.preventDefault();
+      // $(this).addClass('on').siblings().removeClass('on');
+      let idx = $(this).index();
+      let section = contents.eq(idx)
+      let sectionDistance = section.offset().top;
+      console.log(sectionDistance);
+
+      $('html').stop().animate({scrollTop:sectionDistance});
+   });
+
+   $(window).scroll(function(){
+      contents.each(function(){
+         if($(this).offset().top-10 <= $(window).scrollTop()){
+            let idx = $(this).index();
+            menu.removeClass('on');
+            menu.eq(idx).addClass('on');
+
+         }
+      })
+   })
 
 
 
@@ -45,10 +70,6 @@ $(function(){
       $(".nav_menu").animate({"right":"-100%"}, 800);
       $(".menu_icon").find("i").attr("class", "fa fa-bars");
    });
-   
-
-
-   
    
 });
 
