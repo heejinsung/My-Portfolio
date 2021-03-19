@@ -40,9 +40,9 @@
                <div class="nav_menu">
                   <ul>
                      <li><a href="#">Home</a></li>
-                     <li><a href="#">Profile</a></li>
-                     <li><a href="#">Portfolio</a></li>
-                     <li><a href="#">Contact</a></li>
+                     <li><a href="#about">Profile</a></li>
+                     <li><a href="#works">Portfolio</a></li>
+                     <li><a href="#contact">Contact</a></li>
                   </ul>
                </div>
             </div>
@@ -131,40 +131,76 @@
                   Skills
                </div>
                <div class="row">
-                  <div class="html itembox">
-                     <div class="html item">
-                        <i class="fab fa-html5"></i>
-                        <p>Html</p>
+                  <div class="flipcard">
+                     <div class="html itembox">
+                        <div class="html item">
+                           <i class="fab fa-html5"></i>
+                           <p>Html</p>
+                           <p class="hide">80%</p>
+                        </div>
+                        <div class="item-back">
+                           <span>80%</span>
+                        </div>
                      </div>
                   </div>
-                  <div class="css itembox">
-                     <div class="css item">
-                        <i class="fab fa-css3-alt"></i>
-                        <p>CSS</p>
+                  <div class="flipcard">
+                     <div class="css itembox">
+                        <div class="css item">
+                           <i class="fab fa-css3-alt"></i>
+                           <p>css</p>
+                           <p class="hide">80%</p>
+                        </div>
+                        <div class="item-back" style="width: 120px; height: 120px;">
+                           <span>80%</span>
+                        </div>
                      </div>
                   </div>
-                  <div class="js itembox">
-                     <div class="js item">
-                        <i class="fab fa-js"></i>
-                        <p>JavaScript</p>
+                  <div class="flipcard">
+                     <div class="js itembox">
+                        <div class="js item">
+                           <i class="fab fa-js"></i>
+                           <p>JavaScript</p>
+                           <p class="hide">50%</p>
+                        </div>
+                        <div class="item-back" style="width: 120px; height: 120px;">
+                           <span>50%</span>
+                        </div>
                      </div>
                   </div>
-                  <div class="react itembox">
-                     <div class="react item">
-                        <i class="fab fa-react"></i>
-                        <p>React</p>
+                  <div class="flipcard">
+                     <div class="react itembox">
+                        <div class="react item">
+                           <i class="fab fa-react"></i>
+                           <p>React</p>
+                           <p class="hide">40%</p>
+                        </div>
+                        <div class="item-back" style="width: 120px; height: 120px;">
+                           <span>40%</span>
+                        </div>
                      </div>
                   </div>
-                  <div class="php itembox">
-                     <div class="php item">
-                        <i class="fab xi-php"></i>
-                        <p>PHP</p>
+                  <div class="flipcard">
+                     <div class="php itembox">
+                        <div class="php item">
+                           <i class="fab xi-php"></i>
+                           <p>PHP</p>
+                           <p class="hide">50%</p>
+                        </div>
+                        <div class="item-back" style="width: 120px; height: 120px;">
+                           <span>50%</span>
+                        </div>
                      </div>
                   </div>
-                  <div class="ps itembox">
-                     <div class="ps item">
-                        <i class="fab xi-photoshop"></i>
-                        <p>Photoshop</p>
+                  <div class="flipcard">
+                     <div class="ps itembox">
+                        <div class="ps item">
+                           <i class="fab xi-photoshop"></i>
+                           <p>Photoshop</p>
+                           <p class="hide">70%</p>
+                        </div>
+                        <div class="item-back" style="width: 120px; height: 120px;">
+                           <span>70%</span>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -213,6 +249,7 @@
                      </div>
                   </div>
                </div>
+               
             </div>
             <!-- end of slider -->
          </div>
@@ -259,10 +296,12 @@
             loop:true,       // 무한반복 할 것인지
             auto:true,       // 자동 슬라이드
             pager:true,
-            speed:3000,      // 슬라이드 되는 속도
+            speed:500,      // 슬라이드 되는 속도
             pause:4000,       // 이미지가 머무는 시간
             controls:true
          });
+
+         $('.lSPrev').html('<i class="xi-arrow-left">')
       });
 
    </script>

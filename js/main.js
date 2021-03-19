@@ -64,11 +64,12 @@ $(function(){
          }
    });
 
-   $(".nav_menu ul li a").click(function(){
+   $(".nav_menu ul li a").click(function(e){
       $(".menu_overlay").removeClass("active");
 		$(".menu_overlay").fadeOut(800);
-      $(".nav_menu").animate({"right":"-100%"}, 800);
+      $(".nav_menu").animate(800);
       $(".menu_icon").find("i").attr("class", "fa fa-bars");
+      
    });
    
 });

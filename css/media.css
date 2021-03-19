@@ -1,4 +1,56 @@
+@media screen and (max-width:1024px){
+   #main_content .mainTxt{font-size: 3.8rem;}
+
+   .aboutBox{padding: 20px 50px;}
+   .aboutBox .aboutImg{height: 85%;}
+   .aboutBox .aboutTxt{width: 50%;}
+   .aboutBox .aboutTxt i.fas{font-size: 1.5rem;}
+   .aboutBox .aboutTxt h3{font-size: 2.3rem;}
+
+   .slide_container{height: 60vh;}
+   .slideBox .slideImg{width: 90%; padding: 0;}
+   .slideBox .slideTxt{width: 40%; left: 68%;}
+   .slideBox .slideTxt h3{font-size: 1.9rem;}
+
+   
+}
+
+
+@media screen and (max-width:850px){
+   #Header header>nav>ul>li{margin: 15px;}
+
+   .aboutBox .aboutImg{width: 45%; height: 80%;}
+   .aboutBox .aboutTxt{width: 55%;}
+}
+
+
 @media screen and (max-width:768px){
    #Header header>nav{display: none;}
    #Header header .menu{display: block;}
+
+   #main_content .mainTxt{width: 80%;}
+
+   .profile{height: 80vh;}
+   .aboutBox{padding: 20px;}
+   .aboutBox .aboutImg{display: none;}
+   .aboutBox .aboutTxt{width: 100%;}
+   .aboutBox .aboutTxt h3{font-size: 3.3rem;}
+   .aboutBox .about_info .infoCon .send a{border-bottom: 1px solid #ff214f;}
+
+   .skillBox .itembox{width: 100px; height: 100px;}
+   .skillBox .itembox .item-back{display: none; transform: none;}
+   .skillBox .item i.fab{font-size: 2.5rem;}
+   .skillBox .flipcard:hover .itembox{transform: none;}
+
+   .skillBox .item p{display: none;}
+   .skillBox .item .hide{display: block;}
+
+   .slide_container{height: 100vh;}
+   .slideBox .slideImg{width: 100%;}
+   .slideBox .slideImg img{width: 100%;}
+   .slideBox .slideTxt{width: 100%; left: 0; top: 58%; text-align: center;}
+   .slideBox .slideTxt h3{font-size: 2.8rem;}
+   .slideBox .slideTxt .Txtlink{width: 300px; display: inline-block; align-items: center;}
+     
+
 }
