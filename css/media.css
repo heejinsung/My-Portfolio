@@ -7,7 +7,9 @@
    .aboutBox .aboutTxt i.fas{font-size: 1.5rem;}
    .aboutBox .aboutTxt h3{font-size: 2.3rem;}
 
-   .slide_container{height: 60vh;}
+
+   .slide_container{height: 730px;}
+   /* .slider{height: 80%;} */
    .slideBox .slideImg{width: 90%; padding: 0;}
    .slideBox .slideTxt{width: 40%; left: 68%;}
    .slideBox .slideTxt h3{font-size: 1.9rem;}
@@ -16,17 +18,25 @@
 }
 
 
-@media screen and (max-width:850px){
+@media screen and (max-width:900px){
    #Header header>nav>ul>li{margin: 15px;}
 
    .aboutBox .aboutImg{width: 45%; height: 80%;}
    .aboutBox .aboutTxt{width: 55%;}
+
+   .slide_container{height: 100vh;}
+   .slideBox{height: 100%; padding: 0;}
+   .slideBox .slideImg{width: 85%; margin: 0 auto;}
+   .slideBox .slideImg img{width: 100%;}
+   .slideBox .slideTxt{width: 100%; left: 0; top: 66%; text-align: center;}
+   .slideBox .slideTxt h3{font-size: 2.8rem;}
+   .slideBox .slideTxt .Txtlink{width: 300px; display: inline-block; align-items: center;}
 }
 
 
 @media screen and (max-width:768px){
    #Header header>nav{display: none;}
-   #Header header .menu{display: block;}
+   #Header header .menu{display: block; width: 20%;}
 
    #main_content .mainTxt{width: 80%;}
 
@@ -37,6 +47,7 @@
    .aboutBox .aboutTxt h3{font-size: 3.3rem;}
    .aboutBox .about_info .infoCon .send a{border-bottom: 1px solid #ff214f;}
 
+   .skills{padding: 40px 0;}
    .skillBox .itembox{width: 100px; height: 100px;}
    .skillBox .itembox .item-back{display: none; transform: none;}
    .skillBox .item i.fab{font-size: 2.5rem;}
@@ -45,12 +56,50 @@
    .skillBox .item p{display: none;}
    .skillBox .item .hide{display: block;}
 
-   .slide_container{height: 100vh;}
-   .slideBox .slideImg{width: 100%;}
+   .slide_container{height: 650px;}
+   /* .lSSlideWrapper{height: 600px;} */
+   .lSSlideWrapper{height: 650px;}
+   .slideBox{height: 100%;}
+   .slideBox .slideImg{width: 100%; top: 0;}
    .slideBox .slideImg img{width: 100%;}
-   .slideBox .slideTxt{width: 100%; left: 0; top: 58%; text-align: center;}
-   .slideBox .slideTxt h3{font-size: 2.8rem;}
+   .slideBox .slideTxt{width: 100%; left: 0; top: 60%; text-align: center;}
+   .slideBox .slideTxt h3{font-size: 2.5rem;}
    .slideBox .slideTxt .Txtlink{width: 300px; display: inline-block; align-items: center;}
-     
+   .lSPrev img, .lSNext img{display: none;}
 
+   .skillBox .row{display: block; padding: 15px 0;}
+   .skillBox .flipcard{display: inline-block; width: 30%;}
+   .skillBox .itembox{margin: auto;}
+
+   #contact{height: 45vh; padding: 40px 5%;}
+   #contact .contactBox h2 span{font-size: 2.8rem;}
+
+}
+
+@media screen and (max-width:480px){
+   #main_content .mainTxt{font-size: 2.8rem;}
+   #Header header h1{font-size: 1.3rem;}
+   .ConTitle h2{font-size: 2.3rem;}
+   .profile{padding: 0; height: 100%;}
+   .aboutBox .about_info .infoTit{width: 30%; font-size: 1.0rem;}
+   .aboutBox .about_info .infoCon{width: 70%;}
+   .aboutBox .aboutTxt h3{font-size: 2.3rem;}
+   .aboutBox .about_info .infoCon ul>li{font-size: 12px;}
+
+   .skillBox .itembox{width: 95px; height: 95px;}
+   .skillBox .itembox .item, .item-back{padding: 15px;}
+   .skillBox .item i.fab{font-size: 2.1rem;}
+
+   #works{padding: 60px 5%;}
+   .lSSlideWrapper{height: 550px;}
+   .slideBox .slideTxt{top: 45%;}
+   .slideBox .slideTxt h3{font-size: 1.9rem;}
+   .slideBox .slideTxt .Txtlink{width: 250px;}
+
+   #contact{height: 40vh;}
+   #contact .contactBox{padding: 35px;}
+   #contact .contactBox h2 span{font-size: 2.1rem;}
+   #contact .contact_link ul{font-size: 3.8rem;}
+   footer .copyright{font-size: 12px;}
+   
 }

@@ -86,10 +86,10 @@
     background-color: #222222;
     _border-radius: 30px;
     display: inline-block;
-    height: 8px;
+    height: 6px;
     overflow: hidden;
     text-indent: -999em;
-    width: 14px;
+    width: 30px;
     position: relative;
     z-index: 99;
     -webkit-transition: all 0.5s linear 0s;
@@ -150,7 +150,7 @@
 
 /* slider actions */
 .lSAction > a {
-    width: 32px;
+    width: 80px;
     display: block;
     top: 50%;
     height: 32px;
