@@ -5,10 +5,12 @@ $(function(){
       let scrollTop = $(this).scrollTop();
       if( scrollTop > 700 ){
          $('header').addClass("isFixed")
+         $('.nav_menu').css({"background-color":"#1c1c1c"})
       }else{
-          $('header').removeClass("isFixed")
+         $('header').removeClass("isFixed")
+         $('.nav_menu').css({"background-color":"#fff"})
       }
-      return false;
+      // return false;
    });
 
 
@@ -20,9 +22,9 @@ $(function(){
    });
 
 
-   // $('.scroll_top').click(function(){
-   //    $('html').animate({scrollTop : 0}, 800);
-   // });
+   $('.scrollTop').click(function(){
+      $('html').animate({scrollTop : 0}, 800);
+   });
 
    //-------메뉴클릭시 스크롤 이동
    let menu = $("#Header nav li");
@@ -62,6 +64,7 @@ $(function(){
             $(".menu_icon").find("i").attr("class", "fa fa-bars");
             $(".menu_overlay").prev(".nav_menu").slideUp("slow");
          }
+       
    });
 
    $(".nav_menu ul li a").click(function(e){

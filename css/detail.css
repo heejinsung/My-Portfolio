@@ -1,0 +1,12 @@
+#wrap{width: 100%; height: auto;}
+header{height: 80px;}
+header h1{height: 100%; display: flex; align-items: center;}
+.mainCon{width: 100%; _height: 500px; position: relative;}
+.mainConBox img{width: 100%; height: 500px; opacity: 0.2;}
+.mainConBox .main_tit{_width: 100%; position: absolute; top: 20%; left: 33%;}
+.mainConBox .main_tit h2{font-size: 3.5rem; font-family:  'Blinker', sans-serif; font-weight: 600; letter-spacing: 2px;}
+.mainConBox .linkBtn{position: absolute; top: 65%; left: 33%;}
+.mainConBox .linkBtn a{width: 150px; padding: 10px; display: inline-block; text-align: center; border: 1px solid #1d1d1d;  font-size: 1.2rem; margin-right: 20px;}
+.mainConBox .linkBtn i{font-size: 24px; padding-right: 5px;} 
+
+.mainConBox .linkBtn a:hover{background-color: #1d1d1d; color: #fff;}
